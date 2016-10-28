@@ -10,23 +10,26 @@
         Flash &amp; Carry App
     </description>
     
+    <icon src="icon.png" />
+    
     <!-- iPhone 6 / 6+ -->
-    <icon src="img/logo.png" platform="ios" width="180" height="180" />
+    <icon src="icon.png" platform="ios" width="180" height="180" />
 
     <!-- iPhone / iPod Touch  -->
-    <icon src="img/logo.png" platform="ios" width="60" height="60" />
-    <icon src="img/logo.png" platform="ios" width="120" height="120" />
+    <icon src="icon.png" platform="ios" width="60" height="60" />
+    <icon src="icon.png" platform="ios" width="120" height="120" />
 
     <!-- iPad -->
-    <icon src="img/logo.png" platform="ios" width="76" height="76" />
-    <icon src="img/logo.png" platform="ios" width="152" height="152" />
+    <icon src="icon.png" platform="ios" width="76" height="76" />
+    <icon src="icon.png" platform="ios" width="152" height="152" />
 
     <!-- Settings Icon -->
-    <icon src="img/logo.png" platform="ios" width="58" height="58" />
+    <icon src="icon.png" platform="ios" width="29" height="29" />
+    <icon src="icon.png" platform="ios" width="58" height="58" />
 
     <!-- Spotlight Icon -->
-    <icon src="img/logo.png" platform="ios" width="40" height="40" />
-    <icon src="img/logo.png" platform="ios" width="80" height="80" />
+    <icon src="icon.png" platform="ios" width="40" height="40" />
+    <icon src="icon.png" platform="ios" width="80" height="80" />
     
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="5000" />

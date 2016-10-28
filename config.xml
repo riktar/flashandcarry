@@ -24,7 +24,6 @@
     <icon src="icon.png" platform="ios" width="152" height="152" />
 
     <!-- Settings Icon -->
-    <icon src="icon.png" platform="ios" width="29" height="29" />
     <icon src="icon.png" platform="ios" width="58" height="58" />
 
     <!-- Spotlight Icon -->

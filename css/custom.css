@@ -1,0 +1,16 @@
+.ui-body-c, .ui-overlay-c {
+    background: #FFC20E;
+}
+
+.ui-bar-a {
+	border: 1px solid #333;
+	background: #0d4e96;
+}
+
+.ui-btn-up-a {
+    border: 1px solid #113;
+    background: #FFC20E;
+    font-weight: 700;
+    color: #0d4e96;
+    text-shadow: 0px 1px 0px #113;
+}

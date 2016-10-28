@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Login page</title>      
+   </head>
+   <body>
+      <div id="logon-page" data-role="page" data-title="Login data">
+         <header data-role="header" data-back-btn="true">
+            <h1>Flash & Carry App</h1>
+         </header>
+         <div data-role="content">
+            <p>
+               Resta informato sulle novità di Flash & Carry
+            </p>
+            Per poterti fornire le novit&aacute; a te riservate &eacute; necessario che inserisci i tuoi
+            dati di accesso al sito <a target="_blank" href="http://www.flashecarry.it">www.flashecarry.it</a>
+            <form id="logon-form" name="logon-form" action="login.html">
+               <div data-role="fieldcontain">
+                  <label for="username">Nome utente:</label>
+                  <input type="text" id="username" name="login" required="required"/>
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="password">Password:</label>
+                  <input type="text" id="password" name="password" required="required"/>
+               </div>
+
+	            <input type="submit" value="salva dati">
+            </form>
+         </div>
+         <footer data-role="footer" data-position="fixed">
+            <h2><a href="about.html">www.flashecarry.it</a></h2>
+            <a href="#mainpage" data-icon="back" data-rel="back" class="ui-btn-left">Indietro</a>
+			<a href="#mainpage" id="dialphone" data-icon="gear" class="ui-btn-right">Telefona</a>
+         </footer>
+      </div>
+   </body>
+</html>

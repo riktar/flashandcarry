@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Add Feed</title>
+   </head>
+   <body>
+      <div id="add-feed-page" data-role="page" data-title="Add Feed">
+          <header data-role="header">
+            <h1>Add Feed</h1>
+         </header>
+         <div data-role="content">
+            <p>
+               Use this form to add a new feed Feed. It's easy as writing a name, the URL and then click "Add Feed".
+            </p>
+            <form id="add-feed-form" name="add-feed-form" action="add-feed.html">
+               <div data-role="fieldcontain">
+                  <label for="feed-name">Feed Name:</label>
+                  <input type="text" id="feed-name" name="feed-name" required="required"/>
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="feed-url">Feed URL:</label>
+                  <input type="url" id="feed-url" name="feed-url" required="required"/>
+               </div>
+               <input type="submit" value="Add Feed" />
+            </form>
+         </div>
+         <footer data-role="footer" data-position="fixed">
+            <h2><a href="about.html">www.flashecarry.it</a></h2>
+            <a href="#mainpage" data-icon="back" data-rel="back" class="ui-btn-left">Indietro</a>
+			<a href="#mainpage" id="dialphone" data-icon="gear" class="ui-btn-right">Telefona</a>
+         </footer>
+         
+      </div>
+   </body>
+</html>

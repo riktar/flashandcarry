@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="it.mtncompany.flashecarry" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>flashecarry</name>
+    <description>
+        Flash & Carry App
+    </description>
+    <author email="csorrentino@mtncompany.it" href="http://www.mtncompany.it">
+        Apache Cordova Team
+    </author>
+    
+    <icon src="img/logo.png" width="100" height="100" />
+
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
+
+
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

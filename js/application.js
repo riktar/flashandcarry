@@ -373,9 +373,9 @@ var Application = {
       });
    },
    checkRequirements: function () {
-      /*if (navigator.connection.type === Connection.NONE) {
+      if (navigator.connection.type === Connection.NONE) {
          return false;
-      }*/
+      }
 
       return true;
    },

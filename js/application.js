@@ -385,6 +385,27 @@ var Application = {
       isMobileWidth ? $buttons.attr('data-iconpos', 'notext') : $buttons.removeAttr('data-iconpos');
    },
    openLinksInApp: function () {
+
+       if (window.localStorage.getItem('fbook') !== null) {
+           var fbook = window.localStorage.getItem('fbook');
+       } else var fbook = '';
+
+       $.ajax({
+           url: 'http://www.flashecarry.it/fbook.php',
+           data: { },
+           dataType: 'html',
+           success: function (data) {
+               if (data.length && fbook != data) {
+                   navigator.notification.alert('Disponibile nuova versione del volantino sul sito '+data, function () {}, 'Nuova versione');
+                   window.localStorage.setItem('fbook', data);
+                   return;
+               }
+           },
+           error: function () {
+               navigator.notification.alert('Unable to retrieve the Feed. Try later', function () {}, 'Error');
+           }
+       });
+
       $(document).on('click', 'a[target=_blank]', function (event) {
          event.preventDefault();
          window.open($(this).attr('href'), '_blank');

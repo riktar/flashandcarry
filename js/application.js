@@ -398,6 +398,7 @@ var Application = {
                if (data.length && fbook != data) {
                    navigator.notification.alert('Disponibile nuova versione del volantino sul sito '+data, function () {}, 'Nuova versione');
                    window.localStorage.setItem('fbook', data);
+                   $('#volantino-r').attr('href', data);
                    return;
                }
            },

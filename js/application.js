@@ -390,22 +390,24 @@ var Application = {
            var fbook = window.localStorage.getItem('fbook');
        } else var fbook = '';
 
-       $.ajax({
+       /*$.ajax({
            url: 'http://www.flashecarry.it/fbook.php',
            data: { },
-           dataType: 'html',
+           dataType: 'json',
            success: function (data) {
-               if (data.length && fbook != data) {
-                   navigator.notification.alert('Disponibile nuova versione del volantino sul sito '+data, function () {}, 'Nuova versione');
-                   window.localStorage.setItem('fbook', data);
-                   $('#volantino-r').attr('href', data);
+               if (data.result.length && fbook != data.result) {
+                   navigator.notification.alert('Disponibile nuova versione del volantino sul sito '+data.result, function () {}, 'Nuova versione');
+                   window.localStorage.setItem('fbook', data.result);
+                   $('#volantino-r').attr('href', data.result);
+                   console.log('qui')
                    return;
                }
            },
            error: function () {
+               console.log('li')
                navigator.notification.alert('Unable to retrieve the Feed. Try later', function () {}, 'Error');
            }
-       });
+       });*/
 
       $(document).on('click', 'a[target=_blank]', function (event) {
          event.preventDefault();
